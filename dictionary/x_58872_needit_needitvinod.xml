@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="needitvinod" max_length="40" name="x_58872_needit_needitvinod" type="collection">
+        <element label="requested for" mandatory="true" max_length="32" name="u_requestedfor" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="requested type" mandatory="true" max_length="40" name="u_requestedtype" type="string">
+            <choice>
+                <element inactive_on_update="false" label="human resoures" sequence="0" value="human resoures"/>
+                <element inactive_on_update="false" label="facility dept" sequence="1" value="facility dept"/>
+                <element inactive_on_update="false" label="legal dept" sequence="2" value="legal dept"/>
+                <element inactive_on_update="false" label="enter your dept" sequence="3" value="enter your dept"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="what needed" mandatory="true" max_length="40" name="u_whatneeded" type="string">
+            <choice>
+                <element inactive_on_update="false" label="hr1" sequence="0" value="hr1"/>
+                <element inactive_on_update="false" label="hr2" sequence="1" value="hr2"/>
+                <element inactive_on_update="false" label="legal1" sequence="2" value="legal1"/>
+                <element inactive_on_update="false" label="legal2" sequence="3" value="legal2"/>
+                <element inactive_on_update="false" label="fac1" sequence="4" value="fac1"/>
+                <element inactive_on_update="false" label="fac2" sequence="5" value="fac2"/>
+                <element inactive_on_update="false" label="oh1" sequence="6" value="oh1"/>
+                <element inactive_on_update="false" label="oh2" sequence="7" value="oh2"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="when needed" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
+    </element>
+</database>
